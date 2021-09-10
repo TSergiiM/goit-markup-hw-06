@@ -421,6 +421,10 @@ a {
   align-items: baseline;
 }
 
+.footer-social-conteiner {
+  margin-right: 93px;
+}
+
 .footer-text {
   font-weight: 700;
   font-size: 14px;
