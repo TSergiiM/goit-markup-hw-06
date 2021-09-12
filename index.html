@@ -57,7 +57,7 @@
     </section>
     <section class="section">
       <div class="container">
-        <h2 class="advantages-title-hidden">Нашы преимущества</h2>
+        <h2 class="visually-hidden">Нашы преимущества</h2>
         <ul class="advantages">
           <li class="advantages-item">
             <div class="advantages-icon">
@@ -323,15 +323,16 @@
           </li>
         </ul>
       </div>
-      <div>
+      <form class="form-subscribe">
         <p class="footer-text">Подпишитесь на рассылку</p>
-        <form autocomplete="on">
-          <input type="mail" name="subscribe-email" placeholder="E-mail">
-          <button type="submit">Подписаться<svg width="24" height="24">
-              <use href="./images/icons.svg#icon-close-black"></use>
+        <div class="input-btn">
+          <input class="input-subscribe" type="mail" name="subscribe-email" placeholder="E-mail">
+          <button class="btn-subscribe" type="submit">Подписаться
+            <svg class="icon-subscribe" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
             </svg></button>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   </footer>
   <!--модалка для звернення-->
@@ -374,9 +375,16 @@
           <textarea class="field-textarea" name="textarea" placeholder="Введите текст"></textarea>
         </label>
         <label class="checkbox-label">
-          <input type="checkbox" name="policy">
-          <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <span class="checkbox-text"><a href="">Условия
-                договора</a></span></span>
+          <input class=" check visually-hidden" type="checkbox" name="policy">
+          <svg class="icon-border" width="16" height="15">
+            <use href="./images/icons.svg#icon-Vector-border"></use>
+          </svg>
+          <svg class="icon-check" width="11" height="8">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+          <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+            <span class="checkbox-text">
+              <a class="link-policy" href=""> <u> Условия договора </u></a></span></span>
         </label>
         <div class="field-btn">
           <button class="btn-send" type="submit">Отправить</button>
