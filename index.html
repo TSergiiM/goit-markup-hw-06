@@ -335,9 +335,9 @@
     </div>
   </footer>
   <!--модалка для звернення-->
-  <div class="backdrop " data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="btn-close" data-modal-close><svg width="18" height="18">
+      <button type="button" class="btn-close" data-modal-close><svg class="icon-close" width="18" height="18">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg></button>
       <form class="field-form">
@@ -354,7 +354,7 @@
         <div class="field-input-icon">
           <label class="field-label">
             <span class="mark">Телефон</span>
-            <input type="tel" name="tel">
+            <input class="field-input" type="tel" name="tel">
             <svg class="field-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
@@ -363,7 +363,7 @@
         <div class="field-input-icon">
           <label class="field-label">
             <span class="mark">Почта</span>
-            <input type="email" name="email">
+            <input class="field-input" type="email" name="email">
             <svg class="field-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
@@ -371,14 +371,16 @@
         </div>
         <label class="textarea-label">
           <span class="mark">Комментарий</span>
-          <textarea name="textarea" placeholder="Введите текст"></textarea>
+          <textarea class="field-textarea" name="textarea" placeholder="Введите текст"></textarea>
         </label>
         <label class="checkbox-label">
           <input type="checkbox" name="policy">
           <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <span class="checkbox-text"><a href="">Условия
                 договора</a></span></span>
         </label>
-        <button type="submit">Отправить</button>
+        <div class="field-btn">
+          <button class="btn-send" type="submit">Отправить</button>
+        </div>
       </form>
     </div>
   </div>
